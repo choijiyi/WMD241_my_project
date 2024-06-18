@@ -167,29 +167,6 @@ p {
   margin-block: 4px;
 }
 
-.find {
-  position: fixed;
-  right: 160px;
-  bottom: 70px;
-  padding: 4px;
-  font-family: 'timeline-210', sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
-  color: #00fb2c;
-  text-transform: uppercase;
-  border-radius: 2px;
-
-  @media (width < 1070px) {
-    display: none;
-  }
-
-  &:hover {
-    color: #000;
-    background-color: #00fb2c;
-  }
-}
-
 .code {
   position: fixed;
   right: 70px;
