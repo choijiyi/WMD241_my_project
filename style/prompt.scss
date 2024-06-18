@@ -1,0 +1,96 @@
+@import 'https://fonts.googleapis.com/css2?family=Bungee&display=swap';
+@import 'https://use.typekit.net/rvx4teh.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.prompt {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 100svh;
+
+  &_box {
+    display: grid;
+    grid-template-rows: 1.5fr 1fr 1fr;
+    grid-template-columns: 0.5fr 10fr 0.5fr;
+    grid-row: 2;
+    grid-column: 2;
+    min-width: 400px;
+    aspect-ratio: 2/1;
+    padding-inline: 10px;
+    margin-block: auto;
+    background-color: #000;
+    border: 3px solid #00fb2c;
+
+    &_title {
+      grid-row: 1;
+      grid-column: 2;
+      margin-block: auto;
+      margin-inline: auto;
+      font-family: Bungee, sans-serif;
+      font-size: 40px;
+      color: #00fb2c;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &_input_wrap {
+      grid-row: 2;
+      grid-column: 2;
+      width: 100%;
+      margin-block: auto;
+      margin-inline: auto;
+      background-color: rgba($color: #00fb2c, $alpha: 30%);
+    }
+
+    input {
+      grid-row: 2;
+      grid-column: 2;
+      padding: 0;
+      padding: 10px;
+      font-family: orbitron, sans-serif;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 600;
+      color: #00fb2c;
+      background-color: rgba($color: #00fb2c, $alpha: 0%);
+      border: 0;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        color: rgba($color: #00fb2c, $alpha: 30%);
+      }
+    }
+
+    &_button {
+      grid-row: 3;
+      grid-column: 2;
+      width: 60px;
+      height: 30px;
+      margin-block: auto;
+      margin-inline: auto;
+      background-color: #00fb2c;
+      border-radius: 5px;
+
+      &_a {
+        display: flex;
+        justify-content: center;
+        margin-top: 3px;
+        font-family: orbitron, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+  }
+}

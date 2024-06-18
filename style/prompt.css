@@ -1,0 +1,90 @@
+@import 'https://fonts.googleapis.com/css2?family=Bungee&display=swap';
+@import 'https://use.typekit.net/rvx4teh.css';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.prompt {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 100svh;
+}
+.prompt_box {
+  display: grid;
+  grid-template-rows: 1.5fr 1fr 1fr;
+  grid-template-columns: 0.5fr 10fr 0.5fr;
+  grid-row: 2;
+  grid-column: 2;
+  min-width: 400px;
+  aspect-ratio: 2/1;
+  padding-inline: 10px;
+  margin-block: auto;
+  background-color: #000;
+  border: 3px solid #00fb2c;
+}
+.prompt_box_title {
+  grid-row: 1;
+  grid-column: 2;
+  margin-block: auto;
+  margin-inline: auto;
+  font-family: Bungee, sans-serif;
+  font-size: 40px;
+  color: #00fb2c;
+  text-align: center;
+  text-transform: uppercase;
+}
+.prompt_box_input_wrap {
+  grid-row: 2;
+  grid-column: 2;
+  width: 100%;
+  margin-block: auto;
+  margin-inline: auto;
+  background-color: rgba(0, 251, 44, 0.3);
+}
+.prompt_box input {
+  grid-row: 2;
+  grid-column: 2;
+  padding: 0;
+  padding: 10px;
+  font-family: orbitron, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  color: #00fb2c;
+  background-color: rgba(0, 251, 44, 0);
+  border: 0;
+}
+.prompt_box input:focus {
+  outline: none;
+}
+.prompt_box input::-moz-placeholder {
+  color: rgba(0, 251, 44, 0.3);
+}
+.prompt_box input::placeholder {
+  color: rgba(0, 251, 44, 0.3);
+}
+.prompt_box_button {
+  grid-row: 3;
+  grid-column: 2;
+  width: 60px;
+  height: 30px;
+  margin-block: auto;
+  margin-inline: auto;
+  background-color: #00fb2c;
+  border-radius: 5px;
+}
+.prompt_box_button_a {
+  display: flex;
+  justify-content: center;
+  margin-top: 3px;
+  font-family: orbitron, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
